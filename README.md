@@ -1,40 +1,35 @@
-#Yuck.io#
+#Knowledge Facilitation Group#
+##Response to RFQ993471##
 
 ![alt tag](screenshot.png)
 
-Visit the [demo site](http://yuckio.kfgisit.com "demo site")! 
+Visit our demo sites 
 
-Food and Drug Enforcement Where *You* Live
+*	[Yuck.io](http://yuckio.kfgisit.com "demo site"), Food and Drug Enforcement Where *You* Live
+* [Drupal Dataset Publication Platform](http://bpadatasets.kfgisit.com "Drupal Dataset"), our dataset publishing platform
 
-##Description##
-Employing an Agile methodology, we needed to begin with a user story. Our team drew inspiration from the enforcement feeds available from the provided FDA API in the food and drug areas.
+#Description#
 
-Referencing the user story, the team created a backlog of features, allowing for 
+Thank you for evaluating this work in response to the RFQ. Given the aggressive timeline of the RFQ, we decided to approach the problem by recycling work from past projects based on open source componentry. Given the language in the RFQ and the tone of reduce, reuse, recycle we thought it would be appropriate to show how we would approach the problem and leverage the combination of several open source packages working in concert to solve a problem.
+Please note that we normally use a non-public git-based version control system, [Phabricator](http://phabricator.org/ "phabricator") with our project workflow process for clients. While we love GitHub, usually our clients are not comfortable using public repos for their projects. 
+Our response to the RFQ is divided into two pieces: 
 
-[750 word description of the approach used to create the working prototype]
-
-1. Drupal
-2. Django
-
-Thank you for evaluating this work in response to the RFQ. Given the aggressive timeline of the RFP, we decided to approach the problem by recycling work from past projects based on open source componentry. Given the language in the RFP and the tone of reduce, reuse, recycle we thought it would be appropriate to show how we would approach the problem and leverage the combination of several open source packages working in concert to solve a problem.
-Please note that we normally use a non-public git-based version control system, Phabricator (http://phabricator.org/) with our project workflow process for clients. While we love GitHub, usually our clients are not comfortable using public repos for their projects. Our response to the RFP is divided into two pieces: A Drupal-based website that essentially a “dataset publishing platform” (similar to data.gov.uk) that is capable of cataloging, graphing and displaying many generic datasets (including GeoJSON, CSV and others); and a sample scenario-specific front-end, titled “Yuck.io” which is a website that finds food and drug recalls in your state. The “Yuck.io” site is based on Bootstrap, Django. 
-Drupal Dataset Frontend Site: bpadatasets.kfgisit.com“Yuck.io” – Find Food and Drug Recalls in your state – yuckio.kfgisit.com 
-Up And RunningBuild a container that contains Drupal and the starter database from the installation profile. 
+1.	[Drupal Dataset Publication Platform] (http://bpadatasets.kfgisit.com "Drupal Dataset Front End"),
+A Drupal-based website that essentially a “dataset publishing platform” (similar to data.gov.uk) that is capable of cataloging, graphing and displaying many generic datasets (including GeoJSON, CSV and others)
+ 
+2. [Yuck.io] ("http://yuckio.kfgisit.com"), A sample scenario-specific front-end, titled “Yuck.io” which is a website that finds food and drug recalls in your state. The “Yuck.io” site is based on Bootstrap, Django. 
+###Getting Up And Running###Build a container that contains Drupal and the starter database from the installation profile. 
 
 ```bash# docker build -t bpademo/drupal  -f Dockerfile  .# docker run -d -p 80:8000 [image id]
 ```
           Build a container that contains the “Yuck.io” project ```bash# docker build -t bpademo/yuckio  -f Dockerfile-yuckio  .          # docker run -d -p 81:8000 [image id]     
 ```
        You can learn more about what’s involved with setting these sites up by reading the Dockerfiles associated with each project because they contain comments. This repository also contains helper scripts called by and explained further in the Dockerfiles’ comments. For simplicity of communication, we have opted not to use fig/compose for this demonstration (which would better support multi-container applications). 
-Hosting/ServersThe demonstration URLs are hosted on our development machines. However, they are ordinary docker containers and have been tested to be compatible with Machine (https://docs.docker.com/machine/), a tool that helps containers run in Amazon AWS, Digital Ocean, etc. We have experience deploying this in Amazon’s FedRAMP cloud space, too. 
-Background
-The “Yuck.io” site is a completely original project that is meant to demonstrate a “high-fidelity” front-end project that re-uses technology our teams are familiar with under the hood, and incorporates technologies mentioned in RFP. It is a site that could be used by anonymous public visitors to query food and drug recalls in their state. The dataset is delivered via JSONP queries to the FDA’s JSON API. It was also something our designers and copywriters could have a hand in contributing to because it is an original work. The Drupal Dataset Publishing Platform is an entire dataset publishing platform. It is a similar concept to data.gov.uk and can syndicate many different kinds of datasets including CSV, JSON, GeoJSON and more. The site has several example datasets, and more can be created and published for anonymous public consumption through the backend GUI on the site. This type of project scales very well to large teams because it can be worked on in parallel by several different teams. This is because we leverage continuous integration and automation to easily provide teams with access to their own sandboxes by leveraging Docker automation to orchestrate automation of the underlying technologies to quickly create a turn-key Drupal-based Dataset Publishing platform. 
+###Hosting/Servers###The demonstration URLs are hosted on our development machines. However, they are ordinary docker containers and have been tested to be compatible with [Machine] (https://docs.docker.com/machine/), a tool that helps containers run in Amazon AWS, Digital Ocean, etc. We have experience deploying this in Amazon’s FedRAMP cloud space, too. 
+###Background###
+The “Yuck.io” site is a completely original project that is meant to demonstrate a “high-fidelity” front-end project that re-uses technology our teams are familiar with under the hood, and incorporates technologies mentioned in RFQ. It is a site that could be used by anonymous public visitors to query food and drug recalls in their state. The dataset is delivered via JSONP queries to the FDA’s JSON API. It was also something our designers and copywriters could have a hand in contributing to because it is an original work. With a new food recall or illness story on the news seemingly every day, more people are looking to the government, specifically the FDA, to make sure their families are safe. This natural reaction to news stories is the concept behind the site. Yuck.io is a new web application that pulls FDA's enforcement information for the general public to view recent enforcement activity related to food and drugs. The Drupal Dataset Publishing Platform is an entire dataset publishing platform. It is a similar concept to data.gov.uk and can syndicate many different kinds of datasets including CSV, JSON, GeoJSON and more. The site has several example datasets, and more can be created and published for anonymous public consumption through the backend GUI on the site. This type of project scales very well to large teams because it can be worked on in parallel by several different teams. This is because we leverage continuous integration and automation to easily provide teams with access to their own sandboxes by leveraging Docker automation to orchestrate automation of the underlying technologies to quickly create a turn-key Drupal-based Dataset Publishing platform. 
  [DIAGRAM HERE SHOWING HOW MODULES/THEMES CAN BE CLONED WITH GIT IN THE DOCKERFILE OR CAN MAKE THEIR WAY INTO THE INSTALL PROFILE?] 
- In such a workflow, continuous integration and testing is important. As such, for this Drupal project, which is based on PHP, we leverage Travis (https://travis-ci.org), Selenium (http://www.seleniumhq.org/), and PHPUnit (https://phpunit.de/) for Unit Testing.  
-##Background##
-With a new food recall or illness story on the news seemingly every day, more people are looking to the government, specifically the FDA, to make sure their families are safe. This natural reaction to news stories is the concept behind yuck.io
-
-Yuck.io is a new web application that pulls FDA's enforcement information for the general public to view recent enforcement activity related to food and drugs.
+ In such a workflow, continuous integration and testing is important. As such, for this Drupal project, which is based on PHP, we leverage [Travis](https://travis-ci.org), [Selenium](http://www.seleniumhq.org/), and [PHPUnit](https://phpunit.de/) for Unit Testing.
 
 #Approach#
 
