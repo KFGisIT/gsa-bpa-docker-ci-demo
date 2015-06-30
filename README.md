@@ -117,10 +117,6 @@ Require all granted
 </Directory>
 ```
 
-*Docker Container*
-
-[Reference to the DockerFile]
-
 ##Deployment##
 ***ask wendell***
 
@@ -145,7 +141,7 @@ Travis as Build System
 -Example Application = Yuck.io in Django, small scope site
 
 #Licences#
-This product is licensed under the [MIT license agreement](./License.md "License")
+This product is licensed under the [MIT license agreement](./LICENSE "License")
 
 #Credits#
 *  	Krista Diamond, Visual Designer
