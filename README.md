@@ -1,7 +1,7 @@
 #Knowledge Facilitation Group#
 ##Response to RFQ993471##
 
-![alt tag](screenshot.png)
+<iframe  title="KFG Video Walkthrough" width="480" height="390" src="http://www.youtube.com/v/f4IEkTLi4hg?html5=1" frameborder="0" allowfullscreen></iframe>
 
 Visit our demo sites 
 
@@ -25,7 +25,7 @@ A Drupal-based website that essentially a “dataset publishing platform” (sim
           Build a container that contains the “Yuck.io” project ```bash# docker build -t bpademo/yuckio  -f Dockerfile-yuckio  .          # docker run -d -p 81:8000 [image id]     
 ```
        You can learn more about what’s involved with setting these sites up by reading the Dockerfiles associated with each project because they contain comments. This repository also contains helper scripts called by and explained further in the Dockerfiles’ comments. For simplicity of communication, we have opted not to use fig/compose for this demonstration (which would better support multi-container applications). 
-###Hosting/Servers###The demonstration URLs are hosted on our development machines. However, they are ordinary docker containers and have been tested to be compatible with [Machine] (https://docs.docker.com/machine/), a tool that helps containers run in Amazon AWS, Digital Ocean, etc. We have experience deploying this in Amazon’s FedRAMP cloud space, too. 
+###Hosting/Servers###The demonstration URLs are hosted on our development machines. However, they are ordinary docker containers and have been tested to be compatible with [Machine] (https://docs.docker.com/machine/), a tool that helps containers run in Amazon AWS, Digital Ocean, etc. These projects are currently hosted internally, however, we have experience deploying this in Amazon’s FedRAMP cloud space, too. 
 ###Background###
 The “Yuck.io” site is a completely original project that is meant to demonstrate a “high-fidelity” front-end project that re-uses technology our teams are familiar with under the hood, and incorporates technologies mentioned in RFQ. It is a site that could be used by anonymous public visitors to query food and drug recalls in their state. The dataset is delivered via JSONP queries to the FDA’s JSON API. It was also something our designers and copywriters could have a hand in contributing to because it is an original work. With a new food recall or illness story on the news seemingly every day, more people are looking to the government, specifically the FDA, to make sure their families are safe. This natural reaction to news stories is the concept behind the site. Yuck.io is a new web application that pulls FDA's enforcement information for the general public to view recent enforcement activity related to food and drugs. The Drupal Dataset Publishing Platform is an entire dataset publishing platform. It is a similar concept to data.gov.uk and can syndicate many different kinds of datasets including CSV, JSON, GeoJSON and more. The site has several example datasets, and more can be created and published for anonymous public consumption through the backend GUI on the site. This type of project scales very well to large teams because it can be worked on in parallel by several different teams. This is because we leverage continuous integration and automation to easily provide teams with access to their own sandboxes by leveraging Docker automation to orchestrate automation of the underlying technologies to quickly create a turn-key Drupal-based Dataset Publishing platform. 
  [DIAGRAM HERE SHOWING HOW MODULES/THEMES CAN BE CLONED WITH GIT IN THE DOCKERFILE OR CAN MAKE THEIR WAY INTO THE INSTALL PROFILE?] 
@@ -46,9 +46,8 @@ To accomplish this, we broke the project down into three phases. Each phase empl
 [Used an interactive approach-feedback informed subsequent work or versions of the prototype]
 
 ##Design Process##
-***asked Krista***
 
-[Understand what 'people' need, by including people in the prototype design process]
+All KFG applications are designed from a user-centric approach emphaisising the agile princible of user based software design and what people need through the prototype design. This user story is encapsulated [here](https://github.com/KFGisIT/gsa-bpa-django/blob/master/README.md), and is designed to the needs of our hypothetical customer.
 
 [Used at least 3 'human-centered design' tools and techniques]
 
