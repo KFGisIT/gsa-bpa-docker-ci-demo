@@ -77,7 +77,7 @@ KFG follows a mobile ready format design that allows us to immediately leverage 
 *  User Usability First
 *  508 Compliance
 
-###Continous Integration & Automated Testing
+##Continous Integration & Automated Testing
 
 In any project Continuous integration & automated testing are key parts of any KFG agile metholology; we leverage many technologlies including: 
 
@@ -87,7 +87,7 @@ In any project Continuous integration & automated testing are key parts of any K
 
 For more info on testing and automation frameworks, please see [Automation.md](Automation.md).
 
-###Usability Testing###
+##Usability Testing###
 KFG preformed usabiltiy testing with both internal testing staff and an external focus group mixed between different browsers and platforms to test both desktop and mobile platforms 
 
 *	Mac & PC using Chrome, Firefox, Safari, Firefox & IE
