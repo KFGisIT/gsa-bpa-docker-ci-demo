@@ -41,7 +41,6 @@ TODO: Example docker files in docker hub see the security file.
 Default deployment on Docker represent some key security concerns, esecially in the database, applicaiton, and provisioning layers. For details about these vulnerabilites and how KFG has resolved them, please see [Security.md](./Security.md)
 ##Background##
 The “Yuck.io” site is a completely original project that is meant to demonstrate a “high-fidelity” front-end project that re-uses technology our teams are familiar with under the hood, and incorporates technologies mentioned in RFQ. It is a site that could be used by anonymous public visitors to query food and drug recalls in their state. The dataset is delivered via JSONP queries to the FDA’s JSON API. It was also something our designers and copywriters could have a hand in contributing to because it is an original work. With a new food recall or illness story on the news seemingly every day, more people are looking to the government, specifically the FDA, to make sure their families are safe. This natural reaction to news stories is the concept behind the site. Yuck.io is a new web application that pulls FDA's enforcement information for the general public to view recent enforcement activity related to food and drugs. The Drupal Dataset Publishing Platform is an entire dataset publishing platform. It is a similar concept to data.gov.uk and can syndicate many different kinds of datasets including CSV, JSON, GeoJSON and more. The site has several example datasets, and more can be created and published for anonymous public consumption through the backend GUI on the site. This type of project scales very well to large teams because it can be worked on in parallel by several different teams. This is because we leverage continuous integration and automation to easily provide teams with access to their own sandboxes by leveraging Docker automation to orchestrate automation of the underlying technologies to quickly create a turn-key Drupal-based Dataset Publishing platform. 
- In such a workflow, continuous integration and testing is important. As such, for this Drupal project, which is based on PHP, we leverage [Travis](https://travis-ci.org), [Selenium](http://www.seleniumhq.org/), and [PHPUnit](https://phpunit.de/) for Unit Testing.
 
 #Approach#
 
@@ -71,22 +70,22 @@ To most effectively communicate design, we take a human focus rolling through se
 *	Final Presentation to Client (Adobe InDesign)
 
 ###Style Guide###
-KFG follows a 12 column format design that allows us to immediately leverage a [bootstrap](http://getbootstrap.com/css/#grid)-like format, focusing on Responsiive 
+KFG follows a mobile ready format design that allows us to immediately leverage a [bootstrap](http://getbootstrap.com/css/#grid)-like format.
 
-*	Bootstrap-like 12 column layout
+*	12 column layout
 * 	Responsive Design Focus
 *  User Usability First
 *  508 Compliance
 
 ###Continous Integration & Automated Testing
 
-Continuous integration & automated testing are key parts of any KFG project, we leverage many technologlies including: 
+In any project Continuous integration & automated testing are key parts of any KFG agile metholology; we leverage many technologlies including: 
 
 *	[Travis-CI](https://travis-ci.org/) 
 *	[phpUnit](https://phpunit.de/pyunit) / [pyUnit](http://pyunit.sourceforge.net/)
 * 	[Selinium](http://www.seleniumhq.org/) 
 
-For more info on testing and automation frameworks, please see our [Automation.md](Automation.md).
+For more info on testing and automation frameworks, please see [Automation.md](Automation.md).
 
 ###Usability Testing###
 KFG preformed usabiltiy testing with both internal testing staff and an external focus group mixed between different browsers and platforms to test both desktop and mobile platforms 
