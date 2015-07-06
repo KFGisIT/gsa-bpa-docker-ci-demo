@@ -1,7 +1,7 @@
 #Knowledge Facilitation Group#
 ##Response to RFQ993471##
 
-<iframe  title="KFG Video Walkthrough" width="480" height="390" src="http://www.youtube.com/v/f4IEkTLi4hg?html5=1" frameborder="0" allowfullscreen></iframe>
+<iframe  title="KFG Video Walkthrough" width="560" height="315" src="http://www.youtube.com/v/f4IEkTLi4hg?html5=1" frameborder="0" allowfullscreen></iframe>
 
 Visit our demo sites 
 
@@ -15,9 +15,9 @@ Thank you for evaluating this work in response to the RFQ. Given the aggressive 
 Our response to the RFQ is divided into two pieces: 
 
 1.	[Drupal Dataset Publication Platform] (http://bpadatasets.kfgisit.com "Drupal Dataset Front End"),
-A Drupal-based website that essentially a “dataset publishing platform” (similar to data.gov.uk) that is capable of cataloging, graphing and displaying many generic datasets (including GeoJSON, CSV and others)
+A Drupal-based website that essentially a “dataset publishing platform” (similar to data.gov.uk) that is capable of cataloging, graphing and displaying many generic datasets (including GeoJSON, CSV and others). The Durpal Dataset Publication Platform is based on PHP, Drupal, Angular/JavaScript and CKAN.
  
-2. [Yuck.io] ("http://yuckio.kfgisit.com"), A sample scenario-specific front-end, titled “Yuck.io” which is a website that finds food and drug recalls in your state. The “Yuck.io” site is based on Bootstrap, Django. 
+2. [Yuck.io] ("http://yuckio.kfgisit.com"), A sample scenario-specific front-end, titled “Yuck.io” which is a website that finds food and drug recalls in your state. The Yuck.io site is based on Python, Django, Bootstrap, & jQuery/JavaScript. 
 
 ##Systems Engineering##
 ###Getting Up And Running###Build a container that contains Drupal and the starter database from the installation profile. 
