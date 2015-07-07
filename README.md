@@ -19,13 +19,31 @@ Our response to the RFQ is divided into two pieces:
 
 1.	[openFDA Drupal Dataset Publication Platform 
 ![openFDA screenshot](openFdaScreenshot.png)](http://openfda.kfgisit.com "Drupal Dataset Front End")
-A Drupal-based website that essentially a “dataset publishing platform” (similar to data.gov.uk) that is capable of cataloging, graphing and displaying many generic datasets (including GeoJSON, CSV and others). The Drupal Dataset Publication Platform is based on PHP, Drupal & Angular/JavaScript.
+A Drupal-based website that essentially a “dataset publishing platform” (similar to data.gov.uk) that is capable of cataloging, graphing and displaying many generic datasets (including GeoJSON, CSV and others). The Drupal Dataset Publication Platform is based on, Drupal & Angular/JavaScript.
  
 2. [Yuck.io 
 ![Yuck.io Screenshot](yuck-screenshot.png)](http://yuckio.kfgisit.com)
 A sample scenario-specific front-end, titled “Yuck.io” which is a website that finds food and drug recalls in your state. The Yuck.io site is based on Python, Django, Bootstrap, & jQuery/JavaScript. 
 
 ##Systems Engineering##
+
+###Architecture###
+**openFda Drupal Dataset Publication Platform**
+
+*	PHP 5.3.*
+* 	Drupal 7.38
+*  Bootstrap 3.3.*
+*  Angular 1.2.15
+*  JavaScript
+
+**Yuck.io**
+
+*	Python 3.3.*
+* Django 1.7.*
+*	Bootstrap 3.3.*
+* jQuery 2.1.*
+* JavaScript
+
 
 ###Getting Up And Running###
 Start by checking out this repository. You can then use the Dockerfiles to build containers for both Yuck.io, a Django and Bootstrap based website that allows you to explore Food and Drug recalls in your home state; and openFDA Explorer, a Drupal-based site that allows users to explore datasets and admins to easily add new curated datasets from openFDA and other sources. The docker files will bootstrap a starter database from the installation profile to make the environment setup rapid. 
@@ -52,6 +70,10 @@ The demonstration URLs are hosted on our development environment. However, they 
 
 ###Security###
 Default deployment on Docker represent some key security concerns, especially in the database, application, and provisioning layers. For details about these vulnerabilities and how KFG has resolved them, please see [Security.md](./Security.md)
+
+**Continuous Monitoring & Configuration Management**
+
+
 
 ##Background##
 
@@ -122,6 +144,7 @@ This product is licensed under the [MIT license agreement](LICENSE.md "License")
 *  	**Ryan Elliott**, Backend Web Developer
 *	**Amanda Furman**, Product Manager
 * 	**Daniel Furman**, Technical Architect
+*  **Genevieve Frost**, Leader & Quality Manager
 *	**Paul Makarov**, Frontend & Backend Web Developer
 *  **Wade Simmons**, Frontend Web Developer (Middleware)
 * 	**Wendell Wilson**, DevOps Engineer
