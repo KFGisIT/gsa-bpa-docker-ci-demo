@@ -19,8 +19,7 @@ Our response to the RFQ is divided into two pieces:
 
 1.	[openFDA Drupal Dataset Publication Platform] (http://openfda.kfgisit.com "Drupal Dataset Front End")
 ![openFDA screenshot](openFdaScreenshot.png)
-todo: add openFDA screenshot
-
+todo: add openFDA screenshot 
 A Drupal-based website that essentially a “dataset publishing platform” (similar to data.gov.uk) that is capable of cataloging, graphing and displaying many generic datasets (including GeoJSON, CSV and others). The Drupal Dataset Publication Platform is based on PHP, Drupal, Angular/JavaScript.
  
 2. [Yuck.io] (http://yuckio.kfgisit.com)
