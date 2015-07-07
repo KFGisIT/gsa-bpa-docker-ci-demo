@@ -106,7 +106,7 @@ In any project Continuous integration & automated testing are key parts of any K
 For more info on testing and automation frameworks, please see [Automation.md](Automation.md).
 
 ##Usability Testing###
-KFG preformed usability testing with both internal testing staff and an external focus group mixed between different browsers and platforms to test both desktop and mobile platforms 
+KFG preformed usability testing with both internal testing staff and an external focus group mixed between different browsers and platforms to test both desktop and mobile platforms: 
 
 *	Mac & PC using Chrome, Firefox, Safari, Firefox & IE
 * 	iOS
