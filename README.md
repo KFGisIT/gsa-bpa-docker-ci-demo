@@ -17,13 +17,12 @@ Please note that we normally use a non-public git-based version control system, 
 
 Our response to the RFQ is divided into two pieces: 
 
-1.	[openFDA Drupal Dataset Publication Platform] (http://openfda.kfgisit.com "Drupal Dataset Front End")
-![openFDA screenshot](openFdaScreenshot.png)
-todo: add openFDA screenshot 
+1.	[openFDA Drupal Dataset Publication Platform 
+![openFDA screenshot](openFdaScreenshot.png)](http://openfda.kfgisit.com "Drupal Dataset Front End")
 A Drupal-based website that essentially a “dataset publishing platform” (similar to data.gov.uk) that is capable of cataloging, graphing and displaying many generic datasets (including GeoJSON, CSV and others). The Drupal Dataset Publication Platform is based on PHP, Drupal & Angular/JavaScript.
  
-2. [Yuck.io] (http://yuckio.kfgisit.com)
-![Yuck.io Screenshot](yuck-screenshot.png)
+2. [Yuck.io 
+![Yuck.io Screenshot](yuck-screenshot.png)](http://yuckio.kfgisit.com)
 A sample scenario-specific front-end, titled “Yuck.io” which is a website that finds food and drug recalls in your state. The Yuck.io site is based on Python, Django, Bootstrap, & jQuery/JavaScript. 
 
 ##Systems Engineering##
