@@ -51,10 +51,8 @@ To test our work, rather than modeling individual testers and test plans, we mak
 To accomplish this, we broke the project down into three phases. Each phase employs interactive feedback between the designers, developers & engineers to create and deploy the prototype.
 
 1.	Design
-2. 	Development
-3. 	Deployment
-
-TODO: migrate to Approach.md as needed
+* 	Development
+* 	Deployment
 
 ##Design Process##
 
@@ -95,7 +93,7 @@ KFG preformed usability testing with both internal testing staff and an external
 *  Android
 
 #Licences#
-This product is licensed under the [MIT license agreement](./LICENSE.md "License")
+This product is licensed under the [MIT license agreement](LICENSE "License")
 
 #Credits#
 *  	Krista Diamond, Visual Designer
