@@ -8,15 +8,17 @@
 | |\  \| |   | |_\ \
 \_| \_/\_|    \____/
                     
-Amanda Furman
-Architect: Wendell Wilson
-Senior Developer: Paul Makarov 
-UX Specialist, User Story Manager: Krista Diamond
-Drupal Integration: Miles Briggs
-Content Specialist: Jeff Edwards
-Backend Developer: Ryan Elliott
-DevOps Manager: Wade Simmons
-Daniel Furma                     
+Leader: Genevieve Frost
+Technical Architect: Daniel Furman, Miles Briggs
+Visual Designer: Krista Diamond
+Product Manager: Amanda Furman
+DevOps Manager:	Wendell Wilson
+Frontend Web Developer: Jeff Edwards, Paul Makarov, Wade Simmons
+Backend Web SDeveloper: Jeff Edwards, Paul Makarov, Ryan Elliott
+Content Designer: Jeff Edwards
+Interaction Designer: Jeff Edwards
+Usability Tester: Jeff Edwards
+User Researcher: Jeff Edwards    
 
 Site: http://www.kfgisit.com                    
 Location: Richmond, Kentucky, USA
@@ -25,8 +27,8 @@ Location: Richmond, Kentucky, USA
 
 							
 Name: name or url
-
-						
+openfda.kfgisit.com
+yuckio.kfgisit.com						
                  
                         [...]
                         
