@@ -1,0 +1,49 @@
+
+                            
+/* TEAM */
+ _   ________ _____ 
+| | / /|  ___|  __ \
+| |/ / | |_  | |  \/
+|    \ |  _| | | __ 
+| |\  \| |   | |_\ \
+\_| \_/\_|    \____/
+                    
+Amanda Furman
+Architect: Wendell Wilson
+Senior Developer: Paul Makarov 
+UX Specialist, User Story Manager: Krista Diamond
+Drupal Integration: Miles Briggs
+Content Specialist: Jeff Edwards
+Backend Developer: Ryan Elliott
+DevOps Manager: Wade Simmons
+Daniel Furma                     
+
+Site: http://www.kfgisit.com                    
+Location: Richmond, Kentucky, USA
+
+/* THANKS */
+
+							
+Name: name or url
+
+						
+                 
+                        [...]
+                        
+
+                            
+/* SITE */
+
+                            
+Last update: 2015/07/07 
+
+                            
+Standards: HTML5, CSS3, 508 ACCESSIBILITY, JSON, SQLITE, MYSQL, 
+
+                            
+Components: Bootstrap, jQuery, AngularJS, Drupal, Python 3.3, Django.
+
+                            
+Software: bash, vi, travis-ci, ansible, git, slack.com, Docker
+
+
