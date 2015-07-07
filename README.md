@@ -73,7 +73,15 @@ Default deployment on Docker represent some key security concerns, especially in
 
 **Continuous Monitoring & Configuration Management**
 
+For continuous monitoring of the codebase, and running tests against it, our team leverages Travis-CI.
 
+![Travis-CI Screenshot](travis-build.png)
+
+This notifies our team of any issues or changes to the codebase. 
+
+![Notification of Build](slack-notify.png)
+
+Configuration management is achieved combination of the Drupal install, powered by a dockerfile and managed within the git repository.
 
 ##Background##
 
