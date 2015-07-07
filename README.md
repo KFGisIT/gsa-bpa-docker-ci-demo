@@ -80,7 +80,7 @@ This notifies our team of any issues or changes to the codebase.
 
 ![Notification of Build](slack-notify.png)
 
-Configuration management is achieved combination of the Drupal install, powered by a dockerfile and managed within the git repository.
+Configuration management is achieved by the combination of the Drupal install, powered by a dockerfile and managed within the git repository.
 
 ##Background##
 
