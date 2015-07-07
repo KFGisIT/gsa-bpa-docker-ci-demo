@@ -116,12 +116,12 @@ KFG preformed usability testing with both internal testing staff and an external
 This product is licensed under the [MIT license agreement](LICENSE.md "License")
 
 #Credits#
-*  	Krista Diamond, Visual Designer
-*	Amanda Furman, Product Manager
-* 	Daniel Furman, Technical Architect
-*	Paul Makarov, Frontend & Backend Web Developer
-* 	Wendell Wilson, DevOps Engineer
-*  	Ryan Elliott, Backend Web Developer
-*  	Jeff Edwards, Frontend Web Developer, Content Designer, Interaction Designer, Usability Tester, User Researcher, Drupal View Dude
-*  	Miles Briggs, Technical Architect
-*  Wade Simmons, Frontend Web Developer (Middleware)
+*  	**Miles Briggs**, Technical Architect
+*  	**Krista Diamond**, Visual Designer
+*  **Jeff Edwards**, Frontend Web Developer, Content Designer, Interaction Designer, Usability Tester, User Researcher, Drupal View Dude
+*  	**Ryan Elliott**, Backend Web Developer
+*	**Amanda Furman**, Product Manager
+* 	**Daniel Furman**, Technical Architect
+*	**Paul Makarov**, Frontend & Backend Web Developer
+*  **Wade Simmons**, Frontend Web Developer (Middleware)
+* 	**Wendell Wilson**, DevOps Engineer
