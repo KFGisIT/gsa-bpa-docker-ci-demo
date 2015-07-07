@@ -30,7 +30,7 @@ A sample scenario-specific front-end, titled “Yuck.io” which is a website th
 ##Systems Engineering##
 
 ###Getting Up And Running###
-Start by checking out this repository. You can then use the Dockerfiles to build containers for both Yuck.io, a Django and Bootstrap based website that allows you to explore Food and Drug recalls in your home state; and openFDA Explorer, a Drupal-based site that allows users to explore datasets and admins to easily add new curated datasets from openFDA and other sources. The docker files will bootstrap a starter database from the installation profile to make the enviornment setup rapid. 
+Start by checking out this repository. You can then use the Dockerfiles to build containers for both Yuck.io, a Django and Bootstrap based website that allows you to explore Food and Drug recalls in your home state; and openFDA Explorer, a Drupal-based site that allows users to explore datasets and admins to easily add new curated datasets from openFDA and other sources. The docker files will bootstrap a starter database from the installation profile to make the environment setup rapid. 
 
 ```bash
 # docker build -t bpademo/drupal  -f Dockerfile  .
@@ -57,12 +57,12 @@ Default deployment on Docker represent some key security concerns, especially in
 
 ##Background##
 
-The “Yuck.io” site is a completely original project that is meant to demonstrate a “high-fidelity” front-end project that re-uses technology our teams are familiar with under the hood, and incorporates technologies mentioned in RFQ. It is a site that could be used by anonymous public visitors to query food and drug recalls in their state. The dataset is delivered via JSONP queries to the FDA’s JSON API. It was also something our designers and copywriters could have a hand in contributing to because it is an original work. With a new food recall or illness story on the news seemingly every day, more people are looking to the government, specifically the FDA, to make sure their families are safe. This natural reaction to news stories is the concept behind the site. Yuck.io is a new web application that pulls FDA's enforcement information for the general public to view recent enforcement activity related to food and drugs. 
-
 The Drupal Dataset Publishing Platform is an entire dataset publishing platform. It is a similar concept to data.gov.uk and can syndicate many different kinds of datasets including CSV, JSON, GeoJSON and more. The site has several example datasets, and more can be created and published for anonymous public consumption through the backend GUI on the site. 
 This type of project scales very well to large teams because it can be worked on in parallel by several different teams. This is because we leverage continuous integration and automation to easily provide teams with access to their own sandboxes by leveraging Docker automation to orchestrate automation of the underlying technologies to quickly create a turn-key Drupal-based Dataset Publishing platform. 
 
-The Drupal platform provides a convenient architecture for developing with large teams: theming, logic, data controls/permission-based workflow and site data can all be managed independently. Additionally, not all development teams need to have access to production data. Many teams can work from an installation profile such as these and then work with integration specialists to deploy changes to the "gold master" production images. This lends significant scalability. 
+The OpenFDA Data Explorer Drupal platform provides a convenient architecture for developing with large teams: theming, logic, data controls/permission-based workflow and site data can all be managed independently. Additionally, not all development teams need to have access to production data. Many teams can work from an installation profile such as these and then work with integration specialists to deploy changes to the "gold master" production images. This lends significant scalability. 
+
+The “Yuck.io” site is a completely original project that is meant to demonstrate a “high-fidelity” front-end project that re-uses technology our teams are familiar with under the hood, and incorporates technologies mentioned in RFQ. It is a site that could be used by anonymous public visitors to query food and drug recalls in their state. The dataset is delivered via JSONP queries to the FDA’s JSON API. It was also something our designers and copywriters could have a hand in contributing to because it is an original work. With a new food recall or illness story on the news seemingly every day, more people are looking to the government, specifically the FDA, to make sure their families are safe. This natural reaction to news stories is the concept behind the site. Yuck.io is a new web application that pulls FDA's enforcement information for the general public to view recent enforcement activity related to food and drugs. 
 
 #Approach#
 
@@ -75,8 +75,6 @@ To accomplish this, we broke the project down into three phases. Each phase empl
 1.	Design
 2. 	Development
 3. 	Deployment
-
-TODO: migrate to Approach.md as needed
 
 ##Design Process##
 
