@@ -68,7 +68,7 @@ To address the modern enterprise and in line with our user story of a highly mob
 
 To test our work, rather than modeling individual testers and test plans, we make use of automated testing via the Python Selenium framework. This allows us to make assertions about the user experience and implement true test-driven agile development from the functional level as well as the unit testing level. These tests are all committed into the project repository and allow for future extensibility with full regression testing capabilities.
 
-To accomplish this, we broke the project down into three phases. Each phase employs interactive feedback between the designers, developers & engineers to create and deploy the prototype.
+To accomplish this, we broke the project down into three phases. Each phase employs iterative feedback between the designers, developers & engineers to create and deploy the prototype.
 
 1.	Design
 2. 	Development
