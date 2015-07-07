@@ -59,7 +59,6 @@ Build a container that contains the “Yuck.io” project
 # docker build -t bpademo/yuckio  -f Dockerfile-yuckio  .          
 # docker run -d -p 81:8000 [image id]     
 ```
-TODO: Example docker files in docker hub see the security file.
        
 You can learn more about what’s involved with setting these sites up by reading the Docker files associated with each project because they contain comments, or the system engineering section of the [Yuck.io README file](https://github.com/KFGisIT/gsa-bpa-django/blob/master/README.md) and the [Drupal Dataset Publication README file](https://github.com/KFGisIT/gsa-bpa-drupal/blob/master/README.md). This repository also contains helper scripts called by and explained further in the Docker files’ comments. 
 
